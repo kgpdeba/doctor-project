@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const DoctorCard = ({img, name}) => {
+const DoctorCard = ({img, name, id}) => {
   return (
-  <Link to='/booking' className='flex flex-col justify-center items-center gap-4 cursor-pointer'>
+  <Link to={`/booking/${id}`} className='flex flex-col justify-center items-center gap-4 cursor-pointer'>
     <img
       className="w-[130px] h-[130px] object-cover"
       src={img}

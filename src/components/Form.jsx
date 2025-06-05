@@ -3,31 +3,38 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { yupResolver } from "@hookform/resolvers/yup";
 import formSchema from '../validators/formValidator';
+import { useDispatch, useSelector } from 'react-redux';
+import { postData } from '../features/BookingSlice';
 
 const Form = () => {
     const { register, handleSubmit, formState, reset } = useForm({
         resolver: yupResolver(formSchema),
     });
 
+    const date = useSelector((state) => state.app.date)
+    const time = useSelector((state) => state.app.time)
+    const docId = useSelector((state) => state.app.docId)
+
+    const dispatch = useDispatch()
+
 
     const onSubmit = async (data) => {
-        console.log("hellohgjkhkjh")
+        const newData = {
+            date: date,
+            time: time,
+            docId: docId,
+            ...data
+        }
 
+        console.log("hello", newData)
         try {
-            console.log("tyy......")
-            const res = await axios.post("http://localhost:8001", data);
-            if (res) {
-                toast.success("Logged In successfully");
+            dispatch(postData(newData))
 
-                navigate("/home");
-            }
-            else {
-                toast.error(res.data.message || "Login failed. Please try again.");
-            }
-        } catch (error) {
+        }
+
+        catch (error) {
             toast.error(
-                error.response?.data?.message ||
-                "Unauthorized access detected, verify your credentials"
+                " access detected"
             );
             console.log(error)
         }
@@ -70,7 +77,7 @@ const Form = () => {
                                 required=""
                                 {...register("lastName")}
                             />
-                             <p className="text-xs text-red-600 font-semibold h-6 ">
+                            <p className="text-xs text-red-600 font-semibold h-6 ">
                                 {formState.errors.lastName?.message}
                             </p>
                         </div>
@@ -85,7 +92,7 @@ const Form = () => {
                                 required=""
                                 {...register("email")}
                             />
-                             <p className="text-xs text-red-600 font-semibold h-6">
+                            <p className="text-xs text-red-600 font-semibold h-6">
                                 {formState.errors.email?.message}
                             </p>
                         </div>
@@ -101,7 +108,7 @@ const Form = () => {
                                 {...register("phone")}
 
                             />
-                             <p className="text-xs text-red-600 font-semibold h-6">
+                            <p className="text-xs text-red-600 font-semibold h-6">
                                 {formState.errors.phone?.message}
                             </p>
                         </div>
@@ -109,11 +116,11 @@ const Form = () => {
                     </div>
 
                     <button
-                    className="text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium  text-sm px-5 py-2.5 text-center"
-                    type="submit"
-                >
-                    Submit
-                </button>
+                        className="text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium  text-sm px-7 py-2.5 mt-5 text-center"
+                        type="submit"
+                    >
+                        Submit
+                    </button>
                 </form>
             </div>
         </div>

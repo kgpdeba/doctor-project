@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../data/data.json'
+import data from '../../data/data.json'
 import DoctorCard from '../components/DoctorCard'
 import doc1 from '../assets/d1.jpg'
 import doc2 from '../assets/d2.jpg'
@@ -16,7 +16,7 @@ const Home = () => {
             <div className='flex gap-20'>
                 {
                     data.doctors.map((dr, index) => {
-                        return <DoctorCard key={index}  name={dr.name} img={imageMap[dr.img]} />
+                        return <DoctorCard key={index} id={dr.id} name={dr.name} img={imageMap[dr.img]} />
                     })
                 }
             </div>

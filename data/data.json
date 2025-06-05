@@ -1,0 +1,72 @@
+{
+  "doctors": [
+    {
+      "id": "doc001",
+      "name": "Dr. Ayesha Sharma",
+      "img": "d2.jpg",
+      "specialization": "Cardiologist"
+    },
+    {
+      "id": "doc002",
+      "name": "Dr. Arimdam Bose",
+      "img": "d1.jpg",
+      "specialization": "Medicine"
+    }
+  ],
+  "patients": [
+    {
+      "id": "apt1001",
+      "patientName": "Priya Mehta",
+      "doctorId": "doc001",
+      "appointmentDate": "2025-06-10",
+      "appointmentTime": "10:00"
+    },
+    {
+      "id": "apt1002",
+      "patientName": "Rakesh Jha",
+      "doctorId": "doc002",
+      "appointmentDate": "2025-07-12",
+      "appointmentTime": "11:00"
+    },
+    {
+      "id": "9278",
+      "date": "Jun 06 2025",
+      "time": "12:00",
+      "docId": "doc002",
+      "firstName": "DEBASISH",
+      "lastName": "ADHIKARY",
+      "email": "deba.aot@gmail.com",
+      "phone": "9832023344"
+    },
+    {
+      "id": "6923",
+      "date": "Jun 14 2025",
+      "time": "16:00",
+      "docId": "doc001",
+      "firstName": "DEBASISH12",
+      "lastName": "ADHIKARY",
+      "email": "deba.aot@gmail.com",
+      "phone": "9832023344"
+    },
+    {
+      "id": "c6a0",
+      "date": "Jun 20 2025",
+      "time": "12:00",
+      "docId": "doc001",
+      "firstName": "DEBASISH",
+      "lastName": "ADHIKARY",
+      "email": "deba.aot@gmail.com",
+      "phone": "9832023344"
+    },
+    {
+      "id": "1708",
+      "date": "Jun 14 2025",
+      "time": "19:07",
+      "docId": "doc002",
+      "firstName": "aaaaa",
+      "lastName": "aaaaaae",
+      "email": "debddda.aot@gmail.com",
+      "phone": "9832023344"
+    }
+  ]
+}
