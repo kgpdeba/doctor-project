@@ -5,12 +5,14 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import formSchema from '../validators/formValidator';
 import { useDispatch, useSelector } from 'react-redux';
 import { postData } from '../features/BookingSlice';
+import {useNavigate} from 'react-router-dom'
 
 const Form = () => {
     const { register, handleSubmit, formState, reset } = useForm({
         resolver: yupResolver(formSchema),
     });
 
+    const navigate = useNavigate()
     const date = useSelector((state) => state.app.date)
     const time = useSelector((state) => state.app.time)
     const docId = useSelector((state) => state.app.docId)
@@ -39,6 +41,7 @@ const Form = () => {
             console.log(error)
         }
         reset();
+        navigate('/')
     };
 
 
