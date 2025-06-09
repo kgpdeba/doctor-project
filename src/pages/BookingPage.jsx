@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Month from '../components/Month';
 import Time from '../components/Time';
 import Form from '../components/Form';
@@ -10,7 +10,6 @@ const BookingPage = () => {
   const date = useSelector((state)=>state.app.date)
   const time = useSelector((state)=>state.app.time)
   let docId = useSelector((state)=>state.app.docId)
-
 
   const params = useParams()
   const dispatch = useDispatch()
@@ -25,7 +24,6 @@ const BookingPage = () => {
 
   return (
     <div className="p-4 flex justify-evenly items-start mt-20">
-
       <div>
         <h2 className='text-3xl mb-6 text-center font-semibold'>Choose Date</h2>
         <div

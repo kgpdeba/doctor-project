@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 const DoctorCard = ({img, name, id}) => {
@@ -11,7 +11,6 @@ const DoctorCard = ({img, name, id}) => {
     />
     <p>{name}</p>
   </Link>
-
   )
 }
 

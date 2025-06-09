@@ -1,12 +1,12 @@
 import React from 'react'
 import data from '../../data/data.json'
 import DoctorCard from '../components/DoctorCard'
-import doc1 from '../assets/d1.jpg'
-import doc2 from '../assets/d2.jpg'
+import doc1 from '../assets/doctor1.jpg'
+import doc2 from '../assets/doctor2.jpg'
 
 const imageMap = {
-    'd1.jpg': doc1,
-    'd2.jpg': doc2,
+    'doctor1.jpg': doc1,
+    'doctor2.jpg': doc2,
 };
 
 const Home = () => {
@@ -21,8 +21,6 @@ const Home = () => {
                 }
             </div>
         </div>
-
-
     )
 }
 

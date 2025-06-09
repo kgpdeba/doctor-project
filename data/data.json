@@ -3,90 +3,86 @@
     {
       "id": "doc001",
       "name": "Dr. Ayesha Sharma",
-      "img": "d2.jpg",
+      "img": "doctor2.jpg",
       "specialization": "Cardiologist"
     },
     {
       "id": "doc002",
       "name": "Dr. Arimdam Bose",
-      "img": "d1.jpg",
+      "img": "doctor1.jpg",
       "specialization": "Medicine"
     }
   ],
   "patients": [
     {
-      "id": "apt1001",
-      "patientName": "Priya Mehta",
-      "doctorId": "doc001",
-      "appointmentDate": "2025-06-10",
-      "appointmentTime": "10:00"
-    },
-    {
-      "id": "apt1002",
-      "patientName": "Rakesh Jha",
-      "doctorId": "doc002",
-      "appointmentDate": "2025-07-12",
-      "appointmentTime": "11:00"
-    },
-    {
-      "id": "9278",
-      "date": "Jun 06 2025",
-      "time": "12:00",
-      "docId": "doc002",
-      "firstName": "DEBASISH",
-      "lastName": "ADHIKARY",
-      "email": "deba.aot@gmail.com",
-      "phone": "9832023344"
-    },
-    {
-      "id": "6923",
-      "date": "Jun 14 2025",
-      "time": "16:00",
+      "id": "492f",
+      "date": "Jun 10 2025",
+      "time": "21:15",
       "docId": "doc001",
-      "firstName": "DEBASISH12",
-      "lastName": "ADHIKARY",
-      "email": "deba.aot@gmail.com",
-      "phone": "9832023344"
+      "firstName": "Raj",
+      "lastName": "Sharma",
+      "email": "raj@gmail.com",
+      "phone": "9898980000"
     },
     {
-      "id": "c6a0",
+      "id": "3702",
+      "date": "Jun 10 2025",
+      "time": "21:00",
+      "docId": "doc001",
+      "firstName": "Sujit",
+      "lastName": "Bose",
+      "email": "sujit@gmail.com",
+      "phone": "7678009012"
+    },
+    {
+      "id": "709d",
+      "date": "Jun 10 2025",
+      "time": "21:15",
+      "docId": "doc002",
+      "firstName": "Aarti",
+      "lastName": "Singh",
+      "email": "aarti@gmail.com",
+      "phone": "8790890015"
+    },
+    {
+      "id": "2352",
+      "date": "Jun 12 2025",
+      "time": "16:30",
+      "docId": "doc002",
+      "firstName": "Sushovan",
+      "lastName": "Das",
+      "email": "sushovan12@gmail.com",
+      "phone": "9614989070"
+    },
+    {
+      "id": "b29d",
       "date": "Jun 20 2025",
       "time": "12:00",
-      "docId": "doc001",
-      "firstName": "DEBASISH",
-      "lastName": "ADHIKARY",
-      "email": "deba.aot@gmail.com",
-      "phone": "9832023344"
-    },
-    {
-      "id": "1708",
-      "date": "Jun 14 2025",
-      "time": "19:07",
       "docId": "doc002",
-      "firstName": "aaaaa",
-      "lastName": "aaaaaae",
-      "email": "debddda.aot@gmail.com",
-      "phone": "9832023344"
+      "firstName": "Rishi",
+      "lastName": "Kumar",
+      "email": "rishi@gmail.com",
+      "phone": "7897800902"
     },
     {
-      "id": "dabe",
-      "date": "Jun 12 2025",
-      "time": "14:00",
+      "id": "6c36",
+      "date": "Jun 10 2025",
+      "time": "21:45",
       "docId": "doc001",
-      "firstName": "Karmikh",
-      "lastName": "Sholanki1",
-      "email": "abbbb@gmail.com",
-      "phone": "9876543210"
+      "firstName": "Sushmita",
+      "lastName": "Ghosal",
+      "email": "sushmita@gmail.com",
+      "phone": "7687980900"
     },
     {
-      "id": "a091",
-      "date": "Jun 11 2025",
-      "time": "14:00",
-      "docId": "doc002",
-      "firstName": "DEBASISH",
-      "lastName": "ADHIKARY",
-      "email": "deba.aot@gmail.com",
-      "phone": "9832023344"
+      "id": "c608",
+      "date": "Jun 10 2025",
+      "time": "22:30",
+      "docId": "doc001",
+      "firstName": "Aman",
+      "lastName": "Gupta",
+      "email": "aman@gmail.com",
+      "phone": "9000900016"
     }
   ]
 }

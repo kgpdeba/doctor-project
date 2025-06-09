@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Calendar } from 'antd';
 import moment from "moment";
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setDate } from '../features/BookingSlice';
 
 const Month = () => {
@@ -21,16 +21,12 @@ const Month = () => {
     <Calendar
       fullscreen={false}
       disabledDate={disabledStartDate}
-
       onPanelChange={(value) => {
         setViewDate(value);
       }}
-
-    
       onSelect={(value) => {
         setViewDate(value);
       }}
-
       headerRender={({ value, onChange }) => {
         const current = value.clone();
 
